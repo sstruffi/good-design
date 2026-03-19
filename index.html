@@ -155,6 +155,65 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.08);
       }
 
+      .section {
+        margin-top: 80px;
+      }
+
+      .section-inner {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .section h2 {
+        color: #d14f9c;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .divider {
+        width: 42px;
+        height: 2px;
+        background: #d14f9c;
+        margin-bottom: 22px;
+      }
+
+      .section p {
+        line-height: 1.85;
+        color: #6d5c67;
+        margin-bottom: 18px;
+        font-size: 1.04em;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        align-items: start;
+        max-width: 950px;
+        margin: 0 auto;
+      }
+
+      .two-column h2 {
+        color: #d14f9c;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+      }
+
+      .two-column p,
+      .two-column li {
+        line-height: 1.8;
+        color: #6d5c67;
+        font-size: 1.02em;
+      }
+
+      .two-column ul {
+        padding-left: 20px;
+      }
+
+      .two-column li {
+        margin-bottom: 10px;
+      }
+
       footer {
         background: #d14f9c;
         color: white;
@@ -164,7 +223,8 @@
       }
 
       @media (max-width: 900px) {
-        .poster-grid {
+        .poster-grid,
+        .two-column {
           grid-template-columns: 1fr;
         }
       }
@@ -197,6 +257,11 @@
 
         .hero h1 {
           font-size: 2.2em;
+        }
+
+        .section h2,
+        .two-column h2 {
+          font-size: 1.65em;
         }
       }
     </style>
@@ -252,6 +317,89 @@
       <img src="angle.jpeg" alt="Poster variation 2">
       <img src="sad.jpeg" alt="Poster variation 3">
       <img src="bold.jpeg" alt="Poster variation 4">
+    </div>
+
+    <div class="container section">
+      <div class="section-inner">
+        <h2>Project Overview</h2>
+        <div class="divider"></div>
+        <p>
+          This project explores my personal design philosophy through a series of posters
+          that use typography, composition, and image treatment to communicate what strong
+          visual design feels like to me.
+        </p>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="two-column">
+        <div>
+          <h2>What I Was Responsible For</h2>
+          <div class="divider"></div>
+          <p>
+            I developed the concept, created the poster compositions, and made decisions
+            around typography, image placement, and visual balance. My role was to turn an
+            abstract idea about good design into something clear, expressive, and visually engaging.
+          </p>
+        </div>
+
+        <div>
+          <h2>My Contributions</h2>
+          <div class="divider"></div>
+          <p>
+            I explored multiple poster variations to test different ways of communicating
+            the same message. This included adjusting scale, angle, contrast, and emphasis
+            so each version could express the idea in a slightly different way while still
+            feeling connected as one system.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="two-column">
+        <div>
+          <h2>Process and Thinking</h2>
+          <div class="divider"></div>
+          <p>
+            I approached this project by thinking about what makes a design immediately
+            noticeable and memorable. Rather than only focusing on decoration, I used type,
+            composition, and contrast to guide the viewer’s eye and strengthen the message.
+          </p>
+          <p>
+            Creating several variations helped me test what felt most effective and what
+            design choices made the message stronger or weaker.
+          </p>
+        </div>
+
+        <div>
+          <h2>Strong Fundamentals</h2>
+          <div class="divider"></div>
+          <p>
+            A major focus of this work was hierarchy. I wanted the key message to stand out
+            clearly, with supporting visual elements reinforcing it rather than competing
+            with it. I also paid attention to spacing, balance, and readability so the
+            posters felt bold but still intentional and easy to understand.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-inner">
+        <h2>Impact and Learning</h2>
+        <div class="divider"></div>
+        <p>
+          This project helped me strengthen my understanding of how composition and
+          typography shape meaning. I learned that even small changes in hierarchy,
+          placement, and contrast can completely change how a design is read.
+        </p>
+        <p>
+          More importantly, it showed how design decisions need reasoning behind them.
+          The final series reflects not just what I made, but how I tested ideas and
+          refined them to better communicate my point of view.
+        </p>
+      </div>
     </div>
 
     <footer>@ 2026 Sara Truffi - All Rights Reserved</footer>
