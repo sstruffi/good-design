@@ -6,7 +6,7 @@
     <title>Good Design Is... - Sara Truffi Portfolio</title>
 
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
+      * { box-sizing: border-box; margin: 0; padding: 0; } 
 
       body {
         background: #fcfaf5;
@@ -135,7 +135,6 @@
         color: white;
       }
 
-      /* NEW POSTER GRID */
       .poster-grid {
         max-width: 900px;
         margin: 40px auto 0;
@@ -156,66 +155,6 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.08);
       }
 
-      .section {
-        margin-top: 80px;
-        max-width: 750px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .section h2 {
-        color: #d14f9c;
-        margin-bottom: 10px;
-        font-size: 2em;
-      }
-
-      .divider {
-        width: 40px;
-        height: 2px;
-        background: #d14f9c;
-        margin-bottom: 20px;
-      }
-
-      .section p {
-        line-height: 1.8;
-        margin-bottom: 15px;
-        color: #6d5c67;
-        font-size: 1.04em;
-      }
-
-      .two-column {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 36px;
-        align-items: start;
-        max-width: 950px;
-        margin: 80px auto 0;
-      }
-
-      .two-column h2 {
-        color: #d14f9c;
-        margin-bottom: 10px;
-        font-size: 1.8em;
-      }
-
-      .two-column p {
-        line-height: 1.8;
-        color: #6d5c67;
-      }
-
-      .quote-block {
-        max-width: 760px;
-        margin: 0 auto;
-        padding: 28px 0 8px;
-        text-align: center;
-      }
-
-      .quote-block p {
-        font-size: 1.25em;
-        line-height: 1.7;
-        color: #c6428f;
-      }
-
       footer {
         background: #d14f9c;
         color: white;
@@ -225,9 +164,39 @@
       }
 
       @media (max-width: 900px) {
-        .two-column,
         .poster-grid {
           grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          padding: 16px;
+        }
+
+        nav ul li {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 8px;
+        }
+
+        .dropdown-content {
+          position: static;
+          display: block;
+          box-shadow: none;
+          background: transparent;
+          border-radius: 0;
+          min-width: unset;
+          margin-left: 10px;
+        }
+
+        .dropdown-content a {
+          padding: 8px 10px;
+          background: transparent;
+        }
+
+        .hero h1 {
+          font-size: 2.2em;
         }
       }
     </style>
@@ -238,20 +207,20 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="https://sstruffi.github.io/home.html/">Home</a></li>
 
           <li class="dropdown">
-            <a href="work.index">Projects</a>
+            <a href="#">Projects</a>
             <ul class="dropdown-content">
-              <li><a href="videography.html">Videography</a></li>
-              <li><a href="branding.html">Branding</a></li>
-              <li><a href="web-app.html">Web and App</a></li>
-              <li><a href="graphic-design.html">Graphic Design</a></li>
+              <li><a href="https://sstruffi.github.io/Videography/">Videography</a></li>
+              <li><a href="https://sstruffi.github.io/Branding/">Branding</a></li>
+              <li><a href="https://sstruffi.github.io/web-app/">Web and App</a></li>
+              <li><a href="https://sstruffi.github.io/graphic-design/">Graphic Design</a></li>
             </ul>
           </li>
 
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="https://sstruffi.github.io/aboutme.html/">About Me</a></li>
+          <li><a href="https://sstruffi.github.io/contactme.html/">Contact Me</a></li>
         </ul>
       </nav>
     </div>
@@ -271,18 +240,19 @@
           <span>Typography</span>
           <span>Visual Identity</span>
         </div>
+
+        <div class="project-links">
+          <a href="https://sstruffi.github.io/graphic-design/" class="project-button">Back to Graphic Design</a>
+        </div>
       </section>
     </div>
 
-    <!-- NEW 4 IMAGE GRID -->
     <div class="poster-grid">
       <img src="Attracts.jpeg" alt="Poster variation 1">
       <img src="angle.jpeg" alt="Poster variation 2">
       <img src="sad.jpeg" alt="Poster variation 3">
       <img src="bold.jpeg" alt="Poster variation 4">
     </div>
-
-    <!-- rest of your content stays the same -->
 
     <footer>@ 2026 Sara Truffi - All Rights Reserved</footer>
 
